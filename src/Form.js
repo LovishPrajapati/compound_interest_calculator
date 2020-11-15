@@ -34,7 +34,9 @@ function Form() {
       <input
         style={{ color: "green", fontWeight: "bold" }}
         type="number"
-        value={(principle * Math.pow(1 + rate / 100, time)).toFixed(2)}
+        value={(principle * Math.pow(1 + rate / 100, time) - principle).toFixed(
+          2
+        )}
         readOnly
         placeholder="Compound Interest"
       />
